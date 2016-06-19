@@ -9,3 +9,7 @@ ReactNative learn notes and code
 ###2. StopWatch
 
 ![./screenshots/stopwatch.png](./screenshots/stopwatch.png)
+
+###3. Weather
+
+![./screenshots/weather.png](./screenshots/weather.png)
