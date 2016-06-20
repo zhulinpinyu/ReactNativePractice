@@ -1,0 +1,3 @@
+rootProject.name = 'osmwebview'
+
+include ':app'
