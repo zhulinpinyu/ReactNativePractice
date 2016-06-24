@@ -24,5 +24,7 @@ ReactNative learn notes and code
 ###6. Image
 ![./screenshots/ImageDemo.png](./screenshots/ImageDemo.png)
 
-###7. Navigator
-![./screenshots/NavigatorDemo.gif](./screenshots/NavigatorDemo.gif)
+###7. [Navigator](./NavigatorDemo)
+
+###8. [osmwebview](./osmwebview)
+
