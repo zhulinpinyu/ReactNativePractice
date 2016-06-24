@@ -17,3 +17,12 @@ ReactNative learn notes and code
 ###4. FindMyLocation
 
 ![./screenshots/findmylocation.png](./screenshots/findmylocation.png)
+
+###5. DatePickerIOS
+![./screenshots/DatePickerIOSDemo.png](./screenshots/DatePickerIOSDemo.png)
+
+###6. Image
+![./screenshots/ImageDemo.png](./screenshots/ImageDemo.png)
+
+###7. Navigator
+![./screenshots/NavigatorDemo.gif](./screenshots/NavigatorDemo.gif)
