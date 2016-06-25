@@ -25,8 +25,12 @@ ReactNative learn notes and code
 ![./screenshots/ImageDemo.png](./screenshots/ImageDemo.png)
 
 ###7. [Navigator](./NavigatorDemo)
+![./screenshots/NavigatorDemo.png](./screenshots/NavigatorDemo.png)
 
 ###8. [osmwebview](./osmwebview)
 
 ###9. [ListViewDemo (List && Grid)](./ListViewDemo)
 ![./screenshots/ListViewDemo.png](./screenshots/ListViewDemo.png)
+
+###10. [TabBarIOSDemo](./TabBarIOSDemo)
+![./screenshots/TabBarDemo.png](./screenshots/TabBarDemo.png)
