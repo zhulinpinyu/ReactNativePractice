@@ -1,17 +1,4 @@
-import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
-import MapView from 'react-native-maps'
+import App from './src/App'
 
-export default class AirbnbMapDemo extends Component {
-  render() {
-    return (
-      <MapView
-        style={{flex: 1}}
-        showsUserLocation={true}
-        followsUserLocation={true}
-      />
-    );
-  }
-}
-
-AppRegistry.registerComponent('AirbnbMapDemo', () => AirbnbMapDemo);
+AppRegistry.registerComponent('AirbnbMapDemo', () => App);
