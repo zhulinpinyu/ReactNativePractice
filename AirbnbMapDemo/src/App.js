@@ -6,7 +6,13 @@ let id=0
 
 export default class App extends Component {
   state = {
-    markers: []
+    markers: [],
+    region: {
+      latitude: 22.53,
+      longitude: 114.02,
+      latitudeDelta: 0.0922,
+      longitudeDelta: 0.0421,
+    }
   }
 
   randomColor() {
@@ -15,6 +21,7 @@ export default class App extends Component {
 
   onMapPress(e){
     this.setState({
+      ...this.state,
       markers: [
         ...this.state.markers,
         {
@@ -32,8 +39,9 @@ export default class App extends Component {
         <MapView
           style={styles.map}
           showsUserLocation={true}
-          followsUserLocation={true}
-          onLongPress={this.onMapPress.bind(this)}>
+          followsUserLocation={this.state.followsUserLocation}
+          onLongPress={this.onMapPress.bind(this)}
+          region={this.state.region}>
           {
             this.state.markers.map(marker => {
               return (
