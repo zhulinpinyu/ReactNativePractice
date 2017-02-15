@@ -1,18 +1,40 @@
 import React, { Component } from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 import MapView from 'react-native-maps'
+import axios from 'axios'
 
 let id=0
 
 export default class App extends Component {
   state = {
     markers: [],
-    region: {
-      latitude: 22.53,
-      longitude: 114.02,
-      latitudeDelta: 0.0922,
-      longitudeDelta: 0.0421,
-    }
+    center: null,
+    region: null
+  }
+
+  componentDidMount() {
+    navigator.geolocation.getCurrentPosition((position) => {
+        const {coords: {latitude, longitude}} = position
+        axios.get(`https://restapi.amap.com/v3/assistant/coordinate/convert?key=key&locations=${longitude},${latitude}&coordsys=gps`)
+        .then(res => {
+          const [lng,lat] = res.data.locations.split(',')
+          this.setState({
+            center: {
+              longitude: parseFloat(lng),
+              latitude: parseFloat(lat)
+            },
+            region: {
+              latitude: parseFloat(lat),
+              longitude: parseFloat(lng),
+              latitudeDelta: 0.0922,
+              longitudeDelta: 0.0421,
+            }
+          })
+        })
+      },
+      (error) => alert(JSON.stringify(error)),
+      {enableHighAccuracy: true, timeout: 20000, maximumAge: 1000}
+    );
   }
 
   randomColor() {
@@ -33,26 +55,26 @@ export default class App extends Component {
     })
   }
 
+  renderCenter(){
+    if(this.state.center){
+      return (
+        <MapView.Marker
+          coordinate={this.state.center}
+        />
+      )
+    }
+  }
+
   render() {
     return (
       <View style={styles.container}>
         <MapView
           style={styles.map}
           showsUserLocation={true}
-          followsUserLocation={this.state.followsUserLocation}
+          followsUserLocation={false}
           onLongPress={this.onMapPress.bind(this)}
           region={this.state.region}>
-          {
-            this.state.markers.map(marker => {
-              return (
-                <MapView.Marker
-                  key={marker.id}
-                  coordinate={marker.coordinate}
-                  pinColor={marker.color}
-                />
-              )
-            })
-          }
+          {this.renderCenter()}
         </MapView>
         <View style={styles.label}>
           <Text style={styles.labelText}>Map</Text>
