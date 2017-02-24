@@ -1,0 +1,3 @@
+rootProject.name = 'Shaker'
+
+include ':app'
