@@ -2999,6 +2999,14 @@ react-native:
     xmldoc "^0.4.0"
     yargs "^6.4.0"
 
+react-native-image-progress:
+  version "0.6.0"
+  resolved "http://registry.npm.taobao.org/react-native-image-progress/download/react-native-image-progress-0.6.0.tgz#14614add12beaa247a052e5a52e6a9fee0fb8c67"
+
+react-native-progress:
+  version "3.2.0"
+  resolved "http://registry.npm.taobao.org/react-native-progress/download/react-native-progress-3.2.0.tgz#86d756be5537c09936ac3d3c4e23710da590743c"
+
 react-native-shake-event:
   version "3.0.0"
   resolved "http://registry.npm.taobao.org/react-native-shake-event/download/react-native-shake-event-3.0.0.tgz#e9271de7b538689539d16e4b393128463acc5ebe"
