@@ -2,6 +2,8 @@ ReactNativePractice
 ===
 ReactNative learn notes and code
 
+**App ICON 生成工具**： [http://icon.wuruihong.com/](http://icon.wuruihong.com/)
+
 ###1. Weekdays
 
 ![./screenshots/weekdays.png](./screenshots/weekdays.png)
