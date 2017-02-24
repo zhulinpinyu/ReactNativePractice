@@ -1759,7 +1759,7 @@ inquirer@^0.12.0:
     strip-ansi "^3.0.0"
     through "^2.3.6"
 
-invariant@^2.2.0:
+invariant@^2.2.0, invariant@^2.2.x:
   version "2.2.2"
   resolved "http://registry.npm.taobao.org/invariant/download/invariant-2.2.2.tgz#9e1f56ac0acdb6bf303306f338be3b204ae60360"
   dependencies:
@@ -2998,6 +2998,12 @@ react-native:
     xcode "^0.8.9"
     xmldoc "^0.4.0"
     yargs "^6.4.0"
+
+react-native-shake-event:
+  version "3.0.0"
+  resolved "http://registry.npm.taobao.org/react-native-shake-event/download/react-native-shake-event-3.0.0.tgz#e9271de7b538689539d16e4b393128463acc5ebe"
+  dependencies:
+    invariant "^2.2.x"
 
 react-proxy@^1.1.7:
   version "1.1.8"
