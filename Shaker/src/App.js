@@ -6,6 +6,7 @@ import {
 import RNShakeEvent from 'react-native-shake-event'
 import Image from 'react-native-image-progress'
 import * as Progress from 'react-native-progress'
+import { Player } from 'react-native-audio-toolkit'
 
 KEYS = ['abstract', 'animals', 'business', 'cats', 'city', 'food', 'nightlife', 'fashion', 'people', 'nature', 'sports', 'technics', 'transport']
 
@@ -17,6 +18,7 @@ export default class Shaker extends Component {
 
   componentWillMount() {
     RNShakeEvent.addEventListener('shake', () => {
+      new Player('shake_sound_male.mp3').play()
       const key = KEYS[Math.floor(Math.random() * KEYS.length)]
       this.setState({
         now: new Date().toLocaleString(),
