@@ -42,5 +42,8 @@ ReactNative learn notes and code
 
 ###12. [Shaker摇一摇](./Shaker)
 
-###12. [GesturePassword 手势解锁 iOS](./GesturePassword)
+###13. [GesturePassword 手势解锁 iOS](./GesturePassword)
 ![./screenshots/airbnbmap.png](https://github.com/Spikef/react-native-gesture-password/raw/master/screenshot.gif)
+
+###14. [react-navigation 页面导航](./ReactNavigationDemo)
+![./screenshots/react-navigation-demo.gif](./screenshots/react-navigation-demo.gif)
