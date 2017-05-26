@@ -2,7 +2,7 @@ ReactNativePractice
 ===
 ReactNative learn notes and code
 
-**App ICON 生成工具**： [http://icon.wuruihong.com/](http://icon.wuruihong.com/)
+**App ICON 生成工具**： [http://icon.wuruihong.com/](http://icon.wuruihong.com/)  将 Folder `AppIcon.appiconset` 直接拖入 `Images.xcassets` 替换原有的即可完成图标添加
 
 ### 1. Weekdays
 
